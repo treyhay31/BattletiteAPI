@@ -1,5 +1,211 @@
 ﻿[
   {
-
+    "Id": "Ashka",
+    "Description": "This Guy Burns The Flesh",
+    "Tags": [2,4],
+    "WeakAgainst": [
+      {
+        "Id": "Bakko",
+        "Votes": 0
+      },
+      {
+        "Id": "Croak",
+        "Votes": 0
+      },
+      {
+        "Id": "Freya",
+        "Votes": 0
+      },
+      {
+        "Id": "Iva",
+        "Votes": 0
+      },
+      {
+        "Id": "Jade",
+        "Votes": 0
+      },
+      {
+        "Id": "Lucie",
+        "Votes": 0
+      },
+      {
+        "Id": "Oldur",
+        "Votes": 0
+      },
+      {
+        "Id": "Pearl",
+        "Votes": 0
+      },
+      {
+        "Id": "Poloma",
+        "Votes": 0
+      },
+      {
+        "Id": "Shifu",
+        "Votes": 0
+      },
+      {
+        "Id": "Sirius",
+        "Votes": 0
+      },
+      {
+        "Id": "Taya",
+        "Votes": 0
+      },
+      {
+        "Id": "Varesh",
+        "Votes": 0
+      }
+    ],
+    "StrongAgainst": [
+      {
+        "Id": "Bakko",
+        "Votes": 0
+      },
+      {
+        "Id": "Croak",
+        "Votes": 0
+      },
+      {
+        "Id": "Freya",
+        "Votes": 0
+      },
+      {
+        "Id": "Iva",
+        "Votes": 0
+      },
+      {
+        "Id": "Jade",
+        "Votes": 0
+      },
+      {
+        "Id": "Lucie",
+        "Votes": 0
+      },
+      {
+        "Id": "Oldur",
+        "Votes": 0
+      },
+      {
+        "Id": "Pearl",
+        "Votes": 0
+      },
+      {
+        "Id": "Poloma",
+        "Votes": 0
+      },
+      {
+        "Id": "Shifu",
+        "Votes": 0
+      },
+      {
+        "Id": "Sirius",
+        "Votes": 0
+      },
+      {
+        "Id": "Taya",
+        "Votes": 0
+      },
+      {
+        "Id": "Varesh",
+        "Votes": 0
+      }
+    ],
+    "Meta": [
+      [
+        {
+          "Id": "Death",
+          "Position": 0,
+          "Round": 0,
+          "Votes": 0
+        },
+        {
+          "Id": "Life",
+          "Position": 1,
+          "Round": 0,
+          "Votes": 0
+        },
+        {
+          "Id": "Speed",
+          "Position": 2,
+          "Round": 0,
+          "Votes": 0
+        }
+      ],
+      [
+        {
+          "Id": "Death",
+          "Position": 0,
+          "Round": 1,
+          "Votes": 0
+        },
+        {
+          "Id": "Life",
+          "Position": 1,
+          "Round": 1,
+          "Votes": 0
+        },
+        {
+          "Id": "Speed",
+          "Position": 2,
+          "Round": 1,
+          "Votes": 0
+        }
+      ],
+      [
+        {
+          "Id": "Death",
+          "Position": 0,
+          "Round": 2,
+          "Votes": 0
+        },
+        {
+          "Id": "Life",
+          "Position": 1,
+          "Round": 2,
+          "Votes": 0
+        },
+        {
+          "Id": "Speed",
+          "Position": 2,
+          "Round": 2,
+          "Votes": 0
+        }
+      ],
+      [
+        {
+          "Id": "Death",
+          "Position": 0,
+          "Round": 3,
+          "Votes": 0
+        },
+        {
+          "Id": "Life",
+          "Position": 1,
+          "Round": 3,
+          "Votes": 0
+        },
+        {
+          "Id": "Speed",
+          "Position": 2,
+          "Round": 3,
+          "Votes": 0
+        }
+      ],
+      [
+        {
+          "Id": "Death",
+          "Position": 0,
+          "Round": 4,
+          "Votes": 0
+        },
+        {
+          "Id": "Life",
+          "Position": 1,
+          "Round": 4,
+          "Votes": 0
+        }
+      ]
+    ]
   }
 ]

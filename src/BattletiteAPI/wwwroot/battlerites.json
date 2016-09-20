@@ -1,5 +1,20 @@
 ﻿[
   {
-
+    "Id": "Death",
+    "Position": 0,
+    "Round": 0,
+    "Votes": 0
+  },
+  {
+    "Id": "Life",
+    "Position": 1,
+    "Round": 0,
+    "Votes": 0
+  },
+  {
+    "Id": "Speed",
+    "Position": 2,
+    "Round": 0,
+    "Votes": 0
   }
 ]

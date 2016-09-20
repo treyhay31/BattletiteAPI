@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static BattletiteAPI.Helpers.Enums;
 
 namespace BattletiteAPI.Models
 {
@@ -11,21 +12,18 @@ namespace BattletiteAPI.Models
 
         public string Description { get; set; }
 
-        public List<Tags> Tags { get; set; }
+        public List<Tag> Tags { get; set; }
 
-        public List<Character> WeakAgainst { get; set; }
+        public List<Opponent> WeakAgainst { get; set; }
 
-        public List<Character> StrongAgainst { get; set; }
+        public List<Opponent> StrongAgainst { get; set; }
 
         public List<List<Battlerite>> Meta { get; set; }
     }
 
-    public enum Tags
+    public class Opponent
     {
-        Tank,
-        Support,
-        Damage,
-        Melee,
-        Ranged
+        public string Id { get; set; }
+        public int Votes { get; set; }
     }
 }
