@@ -1,132 +1,133 @@
 ﻿[
   {
-    "Id": "Ashka",
+    "Id": "",
+    "name": "Ashka",
     "Description": "This Guy Burns The Flesh",
-    "Tags": [2,4],
+    "Tags": [ 2, 4 ],
     "WeakAgainst": [
       {
-        "Id": "Bakko",
+        "name": "Bakko",
         "Votes": 0
       },
       {
-        "Id": "Croak",
+        "name": "Croak",
         "Votes": 0
       },
       {
-        "Id": "Freya",
+        "name": "Freya",
         "Votes": 0
       },
       {
-        "Id": "Iva",
+        "name": "Iva",
         "Votes": 0
       },
       {
-        "Id": "Jade",
+        "name": "Jade",
         "Votes": 0
       },
       {
-        "Id": "Lucie",
+        "name": "Lucie",
         "Votes": 0
       },
       {
-        "Id": "Oldur",
+        "name": "Oldur",
         "Votes": 0
       },
       {
-        "Id": "Pearl",
+        "name": "Pearl",
         "Votes": 0
       },
       {
-        "Id": "Poloma",
+        "name": "Poloma",
         "Votes": 0
       },
       {
-        "Id": "Shifu",
+        "name": "Shifu",
         "Votes": 0
       },
       {
-        "Id": "Sirius",
+        "name": "Sirius",
         "Votes": 0
       },
       {
-        "Id": "Taya",
+        "name": "Taya",
         "Votes": 0
       },
       {
-        "Id": "Varesh",
+        "name": "Varesh",
         "Votes": 0
       }
     ],
     "StrongAgainst": [
       {
-        "Id": "Bakko",
+        "name": "Bakko",
         "Votes": 0
       },
       {
-        "Id": "Croak",
+        "name": "Croak",
         "Votes": 0
       },
       {
-        "Id": "Freya",
+        "name": "Freya",
         "Votes": 0
       },
       {
-        "Id": "Iva",
+        "name": "Iva",
         "Votes": 0
       },
       {
-        "Id": "Jade",
+        "name": "Jade",
         "Votes": 0
       },
       {
-        "Id": "Lucie",
+        "name": "Lucie",
         "Votes": 0
       },
       {
-        "Id": "Oldur",
+        "name": "Oldur",
         "Votes": 0
       },
       {
-        "Id": "Pearl",
+        "name": "Pearl",
         "Votes": 0
       },
       {
-        "Id": "Poloma",
+        "name": "Poloma",
         "Votes": 0
       },
       {
-        "Id": "Shifu",
+        "name": "Shifu",
         "Votes": 0
       },
       {
-        "Id": "Sirius",
+        "name": "Sirius",
         "Votes": 0
       },
       {
-        "Id": "Taya",
+        "name": "Taya",
         "Votes": 0
       },
       {
-        "Id": "Varesh",
+        "name": "Varesh",
         "Votes": 0
       }
     ],
     "Meta": [
       [
         {
-          "Id": "Death",
+          "name": "Death",
           "Position": 0,
           "Round": 0,
           "Votes": 0
         },
         {
-          "Id": "Life",
+          "name": "Life",
           "Position": 1,
           "Round": 0,
           "Votes": 0
         },
         {
-          "Id": "Speed",
+          "name": "Speed",
           "Position": 2,
           "Round": 0,
           "Votes": 0
@@ -134,19 +135,19 @@
       ],
       [
         {
-          "Id": "Death",
+          "name": "Death",
           "Position": 0,
           "Round": 1,
           "Votes": 0
         },
         {
-          "Id": "Life",
+          "name": "Life",
           "Position": 1,
           "Round": 1,
           "Votes": 0
         },
         {
-          "Id": "Speed",
+          "name": "Speed",
           "Position": 2,
           "Round": 1,
           "Votes": 0
@@ -154,19 +155,19 @@
       ],
       [
         {
-          "Id": "Death",
+          "name": "Death",
           "Position": 0,
           "Round": 2,
           "Votes": 0
         },
         {
-          "Id": "Life",
+          "name": "Life",
           "Position": 1,
           "Round": 2,
           "Votes": 0
         },
         {
-          "Id": "Speed",
+          "name": "Speed",
           "Position": 2,
           "Round": 2,
           "Votes": 0
@@ -174,19 +175,19 @@
       ],
       [
         {
-          "Id": "Death",
+          "name": "Death",
           "Position": 0,
           "Round": 3,
           "Votes": 0
         },
         {
-          "Id": "Life",
+          "name": "Life",
           "Position": 1,
           "Round": 3,
           "Votes": 0
         },
         {
-          "Id": "Speed",
+          "name": "Speed",
           "Position": 2,
           "Round": 3,
           "Votes": 0
@@ -194,13 +195,13 @@
       ],
       [
         {
-          "Id": "Death",
+          "name": "Death",
           "Position": 0,
           "Round": 4,
           "Votes": 0
         },
         {
-          "Id": "Life",
+          "name": "Life",
           "Position": 1,
           "Round": 4,
           "Votes": 0

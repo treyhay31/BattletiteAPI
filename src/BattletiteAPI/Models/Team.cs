@@ -9,7 +9,7 @@ namespace BattletiteAPI.Models
     public abstract class Team
     {
         public string Id { get; set; }
-        public List<Character> Characters { get; set; }
+        public List<Champion> Characters { get; set; }
         public int Size { get; set; }
         public int Votes { get; set; }
     }
@@ -19,7 +19,7 @@ namespace BattletiteAPI.Models
         public TwoManTeam()
         {
             Size = 2;
-            Characters = new List<Character>(Size);
+            Characters = new List<Champion>(Size);
         }
 
         public TwoManTeam(List<string> characterNames)
@@ -33,7 +33,7 @@ namespace BattletiteAPI.Models
         public ThreeManTeam()
         {
             Size = 3;
-            Characters = new List<Character>(Size);
+            Characters = new List<Champion>(Size);
         }
 
         public ThreeManTeam(List<string> characterNames)
