@@ -18,28 +18,10 @@ namespace BattletiteAPI.DataContext
             _db = _client.GetDatabase("battletite");
         }
 
-        public IMongoCollection<Champion> Champions
-        {
-            get
-            {
-                return _db.GetCollection<Champion>("champions");
-            }
-        }
+        public IMongoCollection<Champion> Champions => _db.GetCollection<Champion>("champions");
 
-        public IMongoCollection<Battlerite> Battlerites
-        {
-            get
-            {
-                return _db.GetCollection<Battlerite>("battlerites");
-            }
-        }
+        public IMongoCollection<Battlerite> Battlerites => _db.GetCollection<Battlerite>("battlerites");
 
-        public IMongoCollection<Team> Teams
-        {
-            get
-            {
-                return _db.GetCollection<Team>("teams");
-            }
-        }
+        public IMongoCollection<Team> Teams => _db.GetCollection<Team>("teams");
     }
 }

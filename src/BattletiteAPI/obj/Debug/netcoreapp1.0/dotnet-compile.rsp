@@ -187,8 +187,12 @@ C:\projects\BattletiteAPI\src\BattletiteAPI\Controllers\BattleritesController.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Controllers\ChampionsController.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Controllers\TeamsController.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\DataContext\BattletiteContext.cs
+C:\projects\BattletiteAPI\src\BattletiteAPI\DataContext\Validation.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Helpers\Enums.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Helpers\Strings.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Models\Battlerite.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Models\Champion.cs
 C:\projects\BattletiteAPI\src\BattletiteAPI\Models\Team.cs
+C:\projects\BattletiteAPI\src\BattletiteAPI\Models\Abstracts\Named.cs
+C:\projects\BattletiteAPI\src\BattletiteAPI\Models\REST\Collection.cs
+C:\projects\BattletiteAPI\src\BattletiteAPI\Models\REST\Single.cs

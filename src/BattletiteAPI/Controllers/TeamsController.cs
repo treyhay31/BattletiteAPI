@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BattletiteAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/teams")]
     public class TeamsController : Controller
     {
         // GET: api/values

@@ -22,5 +22,12 @@ namespace BattletiteAPI.Helpers
             Melee,      // 3
             Ranged      // 4
         }
+
+        public enum ChampionType
+        {
+            Melee,   // 0 
+            Range, // 1
+            Support   // 2
+        }
     }
 }

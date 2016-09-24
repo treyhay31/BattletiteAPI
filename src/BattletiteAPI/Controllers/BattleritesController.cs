@@ -7,6 +7,7 @@ using BattletiteAPI.DataContext;
 using BattletiteAPI.Models;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using static BattletiteAPI.DataContext.DBValidation;
 
 // For more information on enabling Web API for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,16 +29,18 @@ namespace BattletiteAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<Battlerite>> Get()
         {
-            return await battlerites.Find(_filter).ToListAsync();
+            return await battlerites
+                .Find(new BsonDocument())
+                .ToListAsync();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public async Task<Battlerite> Get(string id)
         {
-            var filter = Builders<Battlerite>.Filter.Eq("_id", new ObjectId(id));
-
-            return await battlerites.Find(filter).SingleOrDefaultAsync();
+            return await battlerites
+                .Find(NameOrIdFilter<Battlerite>(id))
+                .SingleOrDefaultAsync();
         }
 
         // POST api/values
@@ -51,18 +54,14 @@ namespace BattletiteAPI.Controllers
         [HttpPut("{id}")]
         public async Task Put(string id, [FromBody]Battlerite value)
         {
-            var filter = Builders<Battlerite>.Filter.Eq("_id", new ObjectId(id));
-
-            await battlerites.ReplaceOneAsync(filter, value);
+            await battlerites.ReplaceOneAsync(NameOrIdFilter<Battlerite>(id), value);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public async Task Delete(string id)
         {
-            var filter = Builders<Battlerite>.Filter.Eq("_id", new ObjectId(id));
-
-            await battlerites.DeleteOneAsync(filter);
+            await battlerites.DeleteOneAsync(NameOrIdFilter<Battlerite>(id));
         }
     }
 }
