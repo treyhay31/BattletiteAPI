@@ -10,6 +10,11 @@ namespace BattletiteAPI.Models
 {
     public class Champion
     {
+        public Champion()
+        {
+            Id = ObjectId.GenerateNewId().ToString();
+        }
+
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
 
