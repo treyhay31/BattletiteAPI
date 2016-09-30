@@ -10,12 +10,29 @@ namespace BattletiteAPI.DataContext
     public class BattletiteContext
     {
         private readonly IMongoClient _client;
-        public readonly IMongoDatabase _db;
+        private readonly IMongoDatabase _db;
 
         public BattletiteContext()
         {
-            _client = new MongoClient("mongodb://localhost:27017");
-            _db = _client.GetDatabase("battletite");
+            // Connect to database server
+            try
+            {
+                _client = new MongoClient("mongodb://localhost:27017");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            // Connect to battletite database
+            try
+            {
+                _db = _client.GetDatabase("battletite");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public IMongoCollection<Champion> Champions => _db.GetCollection<Champion>("champions");

@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using BattletiteAPI.Repositories;
+using BattletiteAPI.Models;
+using MongoDB.Bson.Serialization;
 
 namespace BattletiteAPI
 {
@@ -26,6 +29,7 @@ namespace BattletiteAPI
             }
 
             builder.AddEnvironmentVariables();
+
             Configuration = builder.Build();
         }
 
@@ -38,12 +42,21 @@ namespace BattletiteAPI
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();
+
+            // Mongo register class maps
+            BsonClassMap.RegisterClassMap<Champion>();
+            BsonClassMap.RegisterClassMap<BattleritesRepo>();
+
+            // Register Repos
+            services.AddScoped<IRepo<Battlerite, Battlerite>, BattleritesRepo>();
+            services.AddScoped<IRepo<Champion, Champion>, ChampionsRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+
             loggerFactory.AddDebug();
 
             app.UseApplicationInsightsRequestTelemetry();
