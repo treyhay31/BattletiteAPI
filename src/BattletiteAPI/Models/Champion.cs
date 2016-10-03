@@ -26,14 +26,8 @@ namespace BattletiteAPI.Models
 
         public List<Tag> Tags { get; set; }
 
-        public List<Opponent> Counter { get; set; } = new List<Opponent>();
+        public ChampionPool Counters { get; set; }
 
-        public List<List<Battlerite>> Meta { get; set; } = new List<List<Battlerite>>();
-    }
-
-    public class Opponent
-    {
-        public string Name { get; set; }
-        public int Votes { get; set; }
+        public BattleriteMeta Meta { get; set; }
     }
 }

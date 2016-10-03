@@ -43,9 +43,10 @@ namespace BattletiteAPI
 
             services.AddMvc();
 
+            services.AddSwaggerGen();
+
             // Mongo register class maps
-            BsonClassMap.RegisterClassMap<Champion>();
-            BsonClassMap.RegisterClassMap<BattleritesRepo>();
+            RegisterMongoClassMaps();
 
             // Register Repos
             services.AddScoped<IRepo<Battlerite, Battlerite>, BattleritesRepo>();
@@ -64,6 +65,19 @@ namespace BattletiteAPI
             app.UseApplicationInsightsExceptionTelemetry();
 
             app.UseMvc();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUi();
+        }
+
+        private static void RegisterMongoClassMaps()
+        {
+            BsonClassMap.RegisterClassMap<Battlerite>();
+            BsonClassMap.RegisterClassMap<BattleriteMeta>();
+            BsonClassMap.RegisterClassMap<Champion>();
+            BsonClassMap.RegisterClassMap<ChampionPool>();
+            BsonClassMap.RegisterClassMap<Opponent>();
         }
     }
 }
